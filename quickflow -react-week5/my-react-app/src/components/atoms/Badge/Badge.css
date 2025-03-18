@@ -1,0 +1,59 @@
+/* Define CSS variables */
+:root {
+  --badge-font-size: 0.75rem;
+  --badge-font-weight: 500;
+  --badge-padding: 0.25rem 0.5rem;
+  --badge-border-radius: 0.25rem;
+  --badge-background-red: #FEE2E2;
+  --badge-text-red: #B91C1C;
+  --badge-background-blue: #DBEAFE;
+  --badge-text-blue: #1E40AF;
+  --badge-background-green: #D1FAE5;
+  --badge-text-green: #065F46;
+  --badge-background-yellow: #FEF3C7;
+  --badge-text-yellow: #92400E;
+  --badge-background-purple: #EDE9FE;
+  --badge-text-purple: #5B21B6;
+  --badge-background-default: #F3F4F6;
+  --badge-text-default: #4B5563;
+}
+
+/* Badge styles */
+.badge {
+  display: inline-block;
+  font-size: var(--badge-font-size);
+  font-weight: var(--badge-font-weight);
+  padding: var(--badge-padding);
+  border-radius: var(--badge-border-radius);
+}
+
+/* Badge color variants */
+.badge-red {
+  background-color: var(--badge-background-red);
+  color: var(--badge-text-red);
+}
+
+.badge-blue {
+  background-color: var(--badge-background-blue);
+  color: var(--badge-text-blue);
+}
+
+.badge-green {
+  background-color: var(--badge-background-green);
+  color: var(--badge-text-green);
+}
+
+.badge-yellow {
+  background-color: var(--badge-background-yellow);
+  color: var(--badge-text-yellow);
+}
+
+.badge-purple {
+  background-color: var(--badge-background-purple);
+  color: var(--badge-text-purple);
+}
+
+.badge-default {
+  background-color: var(--badge-background-default);
+  color: var(--badge-text-default);
+}

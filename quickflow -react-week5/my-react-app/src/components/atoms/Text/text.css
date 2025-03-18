@@ -1,0 +1,31 @@
+/* Define CSS variables for text styling */
+:root {
+  --text-font-size: 16px;
+  --text-color: #333;
+  --text-line-height: 1.5;
+  --text-margin: 0;
+  --text-font-weight-bold: bold;
+  --text-font-style-italic: italic;
+  --text-align-center: center;
+}
+
+/* Default text styling */
+.text {
+  font-size: var(--text-font-size);
+  color: var(--text-color);
+  line-height: var(--text-line-height);
+  margin: var(--text-margin);
+}
+
+/* Optional: Add additional classes for more specific text styles */
+.text-bold {
+  font-weight: var(--text-font-weight-bold);
+}
+
+.text-italic {
+  font-style: var(--text-font-style-italic);
+}
+
+.text-center {
+  text-align: var(--text-align-center);
+}
