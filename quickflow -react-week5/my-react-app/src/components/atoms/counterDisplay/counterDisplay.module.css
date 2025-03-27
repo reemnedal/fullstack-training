@@ -1,0 +1,84 @@
+/* Define CSS variables for easy customization */
+:root {
+  --counter-bg-color: #ffffff;
+  --counter-text-color: black;
+  --counter-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --counter-button-bg: #007bff;
+  --counter-button-bg-hover: #0056b3;
+  --counter-reset-bg: red;
+  --counter-reset-bg-hover: darkred;
+  --counter-padding: 12px;
+  --button-padding: 10px;
+  --border-radius: 8px;
+  --button-radius: 5px;
+  --font-size-text: 18px;
+  --font-size-button: 14px;
+  --gap-between-buttons: 10px;
+  --z-index: 1000;
+  --button-width: 100%;
+}
+
+/* Counter Display */
+.counter-display {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--counter-padding);
+  background-color: var(--counter-bg-color);
+  color: var(--counter-text-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--counter-box-shadow);
+  z-index: var(--z-index);
+  width: 200px;
+}
+
+/* Counter Text */
+.counter-text {
+  font-size: var(--font-size-text);
+  font-weight: bold;
+  margin-bottom: var(--gap-between-buttons);
+}
+
+/* Buttons Container */
+.counter-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-between-buttons);
+  width: var(--button-width);
+}
+
+/* Common button styling */
+.toggle-all-button,
+.reset-button {
+  width: var(--button-width);
+  padding: var(--button-padding);
+  border: none;
+  border-radius: var(--button-radius);
+  cursor: pointer;
+  font-size: var(--font-size-button);
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Toggle All Button */
+.toggle-all-button {
+  background-color: var(--counter-button-bg);
+  color: white;
+}
+
+.toggle-all-button:hover {
+  background-color: var(--counter-button-bg-hover);
+}
+
+/* Reset Button */
+.reset-button {
+  background-color: var(--counter-reset-bg);
+  color: white;
+}
+
+.reset-button:hover {
+  background-color: var(--counter-reset-bg-hover);
+}

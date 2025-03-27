@@ -1,0 +1,27 @@
+/* Define CSS variables for Button component */
+:root {
+  --button-bg-color: #007bff;
+  --button-hover-bg-color: #0056b3;
+  --button-text-color: white;
+  --button-padding: 10px 16px;
+  --button-border-radius: 8px;
+  --button-font-size: 14px;
+  --button-transition: background 0.3s ease-in-out;
+}
+
+/* Button Styling */
+.button {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  padding: var(--button-padding);
+  border: none;
+  border-radius: var(--button-border-radius);
+  cursor: pointer;
+  font-size: var(--button-font-size);
+  transition: var(--button-transition);
+}
+
+/* Button Hover Effect */
+.button:hover {
+  background-color: var(--button-hover-bg-color);
+}

@@ -1,0 +1,45 @@
+/* Define CSS variables for easy customization */
+:root {
+  --loader-animation-duration: 1s;
+  --loader-border-color-light: #f3f3f3;
+  --loader-border-color-top: #3498db;
+  --loader-border-width: 4px;
+  --loader-size: 40px;
+  --overlay-background: rgba(255, 255, 255, 0.7);
+  --z-index-loader: 9999;
+}
+
+/* Center the loader container */
+.loader-container {
+  align-items: center; /* Center vertically */
+  background: var(--overlay-background); /* Background with transparency */
+  bottom: 0;
+  display: flex;
+  height: 100vh; /* Take full viewport height */
+  justify-content: center; /* Center horizontally */
+  left: 0;
+  position: fixed; /* Fix position for full screen */
+  right: 0;
+  top: 0;
+  z-index: var(--z-index-loader); /* Ensure the loader is on top */
+}
+
+/* Styling for the spinning loader */
+.loader {
+  animation: spin var(--loader-animation-duration) linear infinite; /* Apply spin animation */
+  border-radius: 50%; /* Make it circular */
+  border-top: var(--loader-border-width) solid var(--loader-border-color-top); /* Blue top border */
+  border: var(--loader-border-width) solid var(--loader-border-color-light); /* Light gray border */
+  height: var(--loader-size); /* Set height */
+  width: var(--loader-size); /* Set width */
+}
+
+/* Keyframes for spinning animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

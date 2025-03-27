@@ -1,0 +1,25 @@
+/* Define CSS variables for easy customization */
+:root {
+  --image-width: 90%;
+  --image-height: 150px;
+  --image-border-radius: 12px;
+  --image-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --image-box-shadow-hover: 0 6px 18px rgba(0, 0, 0, 0.2);
+  --image-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  --image-transform-hover: scale(1.05);
+}
+
+/* Styling for Image */
+.image {
+  width: var(--image-width);
+  height: var(--image-height);
+  border-radius: var(--image-border-radius);
+  box-shadow: var(--image-box-shadow);
+  transition: var(--image-transition);
+}
+
+/* Hover effect for better interaction */
+.image:hover {
+  transform: var(--image-transform-hover);
+  box-shadow: var(--image-box-shadow-hover);
+}

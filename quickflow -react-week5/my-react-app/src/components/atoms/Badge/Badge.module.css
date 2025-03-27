@@ -1,0 +1,39 @@
+/* Badge.module.css */
+
+.badge {
+  display: inline-block;
+  font-size: var(--badge-font-size);
+  font-weight: var(--badge-font-weight);
+  padding: var(--badge-padding);
+  border-radius: var(--badge-border-radius);
+}
+
+.badge-red {
+  background-color: var(--badge-background-red);
+  color: var(--badge-text-red);
+}
+
+.badge-blue {
+  background-color: var(--badge-background-blue);
+  color: var(--badge-text-blue);
+}
+
+.badge-green {
+  background-color: var(--badge-background-green);
+  color: var(--badge-text-green);
+}
+
+.badge-yellow {
+  background-color: var(--badge-background-yellow);
+  color: var(--badge-text-yellow);
+}
+
+.badge-purple {
+  background-color: var(--badge-background-purple);
+  color: var(--badge-text-purple);
+}
+
+.badge-default {
+  background-color: var(--badge-background-default);
+  color: var(--badge-text-default);
+}

@@ -1,0 +1,68 @@
+/* KanbanBoard.module.css */
+
+/* Define CSS variables */
+:root {
+  --kanban-header-padding: 1rem;
+  --kanban-header-margin-bottom: 1rem;
+  --kanban-header-border: 1px solid #e5e7eb;
+  --kanban-title-font-size: 1.25rem;
+  --kanban-title-font-weight: 700;
+  --kanban-title-color: #1f2937;
+  --kanban-add-button-bg: #3b82f6;
+  --kanban-add-button-color: white;
+  --kanban-add-button-padding: 0.5rem 1rem;
+  --kanban-add-button-border-radius: 0.25rem;
+  --kanban-add-button-font-size: 0.875rem;
+  --kanban-add-button-hover-bg: #2563eb;
+  --kanban-columns-padding: 0 1rem;
+  --kanban-columns-gap: 1rem;
+  --kanban-columns-padding-bottom: 1rem;
+  --app-bg-color: #f3f4f6;
+}
+
+.kanbanBoard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.kanbanBoardHeader {
+  background-color: white;
+  border-bottom: var(--kanban-header-border);
+  padding: var(--kanban-header-padding);
+  margin-bottom: var(--kanban-header-margin-bottom);
+}
+
+.kanbanBoardHeaderContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kanbanBoardTitle {
+  font-size: var(--kanban-title-font-size);
+  font-weight: var(--kanban-title-font-weight);
+  color: var(--kanban-title-color);
+}
+
+.kanbanBoardAddButton {
+  background-color: var(--kanban-add-button-bg);
+  color: var(--kanban-add-button-color);
+  padding: var(--kanban-add-button-padding);
+  border-radius: var(--kanban-add-button-border-radius);
+  font-size: var(--kanban-add-button-font-size);
+  border: none;
+  cursor: pointer;
+}
+
+.kanbanBoardAddButton:hover {
+  background-color: var(--kanban-add-button-hover-bg);
+}
+
+.kanbanBoardColumns {
+  display: flex;
+  padding: var(--kanban-columns-padding);
+  gap: var(--kanban-columns-gap);
+  overflow-x: auto;
+  padding-bottom: var(--kanban-columns-padding-bottom);
+}

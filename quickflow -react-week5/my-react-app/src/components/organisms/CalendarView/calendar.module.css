@@ -1,0 +1,129 @@
+.calendarContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.calendarTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.viewControls {
+  display: flex;
+  gap: 5px;
+}
+
+.viewButton {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.viewButton.active {
+  background-color: #1e40af;
+  color: white;
+}
+
+.calendarMonthView {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendarWeekdays {
+  display: flex;
+  width: 100%;
+}
+
+.weekday {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+}
+
+.calendarDays {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.calendarDay {
+  flex: 1;
+  min-width: 14%;
+  height: 100px;
+  position: relative;
+  cursor: pointer;
+}
+
+.otherMonth {
+  background-color: #f0f0f0;
+}
+
+.today {
+  background-color: #f0e68c;
+}
+
+.selected {
+  border: 2px solid #1e40af;
+}
+
+.dayNumber {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.dayEvents {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  padding: 5px;
+}
+
+.calendarEvent {
+  background-color: #1e40af;
+  color: white;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.875rem;
+}
+
+.moreEvents {
+  font-size: 0.75rem;
+  color: gray;
+}
+
+.navButton {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.todayButton {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.navButton,
+.todayButton {
+  border-radius: 5px;
+}
+
+.weekView {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.dayView {
+  font-size: 1.25rem;
+  text-align: center;
+}
